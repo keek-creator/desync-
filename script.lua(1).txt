@@ -1,0 +1,226 @@
+-- generated with catmio | https://discord.gg/cq9GkRKX2V
+local Players = game:GetService("Players")
+local uIS = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+local localPlayer = Players.LocalPlayer
+local CoreGui = game:GetService("CoreGui")
+local faykGui = Instance.new("ScreenGui")
+faykGui.Name = "FaykGui"
+faykGui.ResetOnSpawn = false
+faykGui.IgnoreGuiInset = true
+faykGui.Parent = CoreGui
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 160, 0, 185)
+frame.Position = UDim2.new(0.5, -80, 0.5, -92)
+frame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+frame.BorderSizePixel = 0
+frame.Active = true
+frame.Parent = faykGui
+local uICorner = Instance.new("UICorner")
+uICorner.CornerRadius = UDim.new(0, 12)
+uICorner.Parent = frame
+local uIStroke = Instance.new("UIStroke")
+uIStroke.Color = Color3.fromRGB(0, 0, 0)
+uIStroke.Thickness = 2
+uIStroke.Transparency = 0
+uIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uIStroke.Parent = frame
+local uIStroke_ = Instance.new("UIStroke")
+uIStroke_.Color = Color3.fromRGB(255, 255, 255)
+uIStroke_.Thickness = 1.5
+uIStroke_.Transparency = 0.35
+uIStroke_.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uIStroke_.ZIndex = 2
+uIStroke_.Parent = frame
+local uIGradient = Instance.new("UIGradient")
+uIGradient.Color = ColorSequence.new(Color3.fromRGB(255, 255, 255))
+uIGradient.Transparency = NumberSequence.new({
+    [1] = NumberSequenceKeypoint.new(0, 1),
+    [2] = NumberSequenceKeypoint.new(0.45, 0),
+    [3] = NumberSequenceKeypoint.new(0.55, 0),
+    [4] = NumberSequenceKeypoint.new(1, 1)
+})
+uIGradient.Rotation = 0
+uIGradient.Parent = uIStroke_
+local tween = TweenService:Create(uIStroke_, TweenInfo.new(1.5, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true), {
+    Thickness = 2.2,
+    Transparency = 0.1
+})
+tween:Play()
+local conn = RunService.Heartbeat:Connect(function(deltaTime)
+end)
+local textLabel = Instance.new("TextLabel")
+textLabel.Size = UDim2.new(1, 0, 0, 30)
+textLabel.Position = UDim2.new(0, 0, 0, 2)
+textLabel.BackgroundTransparency = 1
+textLabel.Text = "Fayk"
+textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+textLabel.Font = Enum.Font.GothamBlack
+textLabel.TextSize = 18
+textLabel.Parent = frame
+local textButton = Instance.new("TextButton")
+textButton.Size = UDim2.new(0.88, 0, 0, 34)
+textButton.Position = UDim2.new(0.06, 0, 0, 38)
+textButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+textButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+textButton.Font = Enum.Font.GothamBlack
+textButton.TextSize = 18
+textButton.Text = "DESYNC"
+textButton.Parent = frame
+local uICorner = Instance.new("UICorner", textButton)
+uICorner.CornerRadius = UDim.new(0, 10)
+local uIStroke = Instance.new("UIStroke", textButton)
+uIStroke.Color = Color3.fromRGB(255, 255, 255)
+uIStroke.Thickness = 1.2
+uIStroke.Transparency = 0.4
+uIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uIStroke.ZIndex = 2
+local uIGradient = Instance.new("UIGradient", uIStroke)
+uIGradient.Color = ColorSequence.new(Color3.fromRGB(255, 255, 255))
+uIGradient.Transparency = NumberSequence.new({
+    [1] = NumberSequenceKeypoint.new(0, 1),
+    [2] = NumberSequenceKeypoint.new(0.4, 0),
+    [3] = NumberSequenceKeypoint.new(0.6, 0),
+    [4] = NumberSequenceKeypoint.new(1, 1)
+})
+local tween = TweenService:Create(uIStroke, TweenInfo.new(1.5, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true), {
+    Thickness = 2,
+    Transparency = 0.12
+})
+tween:Play()
+local conn = RunService.Heartbeat:Connect(function(deltaTime)
+end)
+local conn = textButton.MouseEnter:Connect(function(x, y)
+    textButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+end)
+local conn = textButton.MouseLeave:Connect(function(x, y)
+    textButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+end)
+local textButton_ = Instance.new("TextButton")
+textButton_.Size = UDim2.new(0.88, 0, 0, 34)
+textButton_.Position = UDim2.new(0.06, 0, 0, 82)
+textButton_.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+textButton_.TextColor3 = Color3.fromRGB(255, 255, 255)
+textButton_.Font = Enum.Font.GothamBlack
+textButton_.TextSize = 16
+textButton_.Text = "UNWALK"
+textButton_.Parent = frame
+local uICorner = Instance.new("UICorner", textButton_)
+uICorner.CornerRadius = UDim.new(0, 10)
+local uIStroke = Instance.new("UIStroke", textButton_)
+uIStroke.Color = Color3.fromRGB(255, 255, 255)
+uIStroke.Thickness = 1.2
+uIStroke.Transparency = 0.4
+uIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uIStroke.ZIndex = 2
+local uIGradient = Instance.new("UIGradient", uIStroke)
+uIGradient.Color = ColorSequence.new(Color3.fromRGB(255, 255, 255))
+uIGradient.Transparency = NumberSequence.new({
+    [1] = NumberSequenceKeypoint.new(0, 1),
+    [2] = NumberSequenceKeypoint.new(0.4, 0),
+    [3] = NumberSequenceKeypoint.new(0.6, 0),
+    [4] = NumberSequenceKeypoint.new(1, 1)
+})
+local tween = TweenService:Create(uIStroke, TweenInfo.new(1.5, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true), {
+    Thickness = 2,
+    Transparency = 0.12
+})
+tween:Play()
+local conn = RunService.Heartbeat:Connect(function(deltaTime)
+end)
+local conn = textButton_.MouseEnter:Connect(function(x, y)
+    textButton_.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+end)
+local conn = textButton_.MouseLeave:Connect(function(x, y)
+    textButton_.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+end)
+local textButton_ = Instance.new("TextButton")
+textButton_.Size = UDim2.new(0.88, 0, 0, 34)
+textButton_.Position = UDim2.new(0.06, 0, 0, 126)
+textButton_.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+textButton_.TextColor3 = Color3.fromRGB(255, 255, 255)
+textButton_.Font = Enum.Font.GothamBlack
+textButton_.TextSize = 16
+textButton_.Text = "RESET"
+textButton_.Parent = frame
+local uICorner = Instance.new("UICorner", textButton_)
+uICorner.CornerRadius = UDim.new(0, 10)
+local uIStroke = Instance.new("UIStroke", textButton_)
+uIStroke.Color = Color3.fromRGB(255, 255, 255)
+uIStroke.Thickness = 1.2
+uIStroke.Transparency = 0.4
+uIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uIStroke.ZIndex = 2
+local uIGradient = Instance.new("UIGradient", uIStroke)
+uIGradient.Color = ColorSequence.new(Color3.fromRGB(255, 255, 255))
+uIGradient.Transparency = NumberSequence.new({
+    [1] = NumberSequenceKeypoint.new(0, 1),
+    [2] = NumberSequenceKeypoint.new(0.4, 0),
+    [3] = NumberSequenceKeypoint.new(0.6, 0),
+    [4] = NumberSequenceKeypoint.new(1, 1)
+})
+local tween = TweenService:Create(uIStroke, TweenInfo.new(1.5, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true), {
+    Thickness = 2,
+    Transparency = 0.12
+})
+tween:Play()
+local conn = RunService.Heartbeat:Connect(function(deltaTime)
+end)
+local conn = textButton_.MouseEnter:Connect(function(x, y)
+    textButton_.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+end)
+local conn = textButton_.MouseLeave:Connect(function(x, y)
+    textButton_.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+end)
+local textLabel_ = Instance.new("TextLabel")
+textLabel_.Size = UDim2.new(1, 0, 0, 14)
+textLabel_.Position = UDim2.new(0, 0, 1, -16)
+textLabel_.BackgroundTransparency = 1
+textLabel_.Text = ".gg/9KsUyuakyZ"
+textLabel_.TextColor3 = Color3.fromRGB(255, 255, 255)
+textLabel_.TextTransparency = 0.75
+textLabel_.Font = Enum.Font.Gotham
+textLabel_.TextSize = 9
+textLabel_.TextXAlignment = Enum.TextXAlignment.Center
+textLabel_.Parent = frame
+local conn = frame.InputBegan:Connect(function(input, gameProcessed)
+end)
+local conn = uIS.InputChanged:Connect(function(input, gameProcessed)
+end)
+local conn = textButton.Activated:Connect(function()
+    textButton.Text = "ERROR"
+    textButton.BackgroundColor3 = Color3.fromRGB(170, 50, 50)
+    task.wait(1)
+    textButton.Text = "DESYNC"
+    textButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+end)
+local conn = textButton_.Activated:Connect(function()
+    local humanoid = object:FindFirstChildOfClass("Humanoid")
+    local animator = humanoid:FindFirstChildOfClass("Animator")
+    local animate = object:FindFirstChild("Animate")
+    local idle = animate:FindFirstChild("idle")
+    for _, child in idle:GetChildren() do
+    end
+end)
+local conn = textButton_.Activated:Connect(function()
+    textButton_.Text = "RUNNING..."
+    local humanoid = object:FindFirstChildWhichIsA("Humanoid")
+    humanoid:ChangeState(Enum.HumanoidStateType.Dead)
+    object:ClearAllChildren()
+    local model = Instance.new("Model")
+    model.Parent = workspace
+    localPlayer.Character = model
+    task.wait()
+    localPlayer.Character = {}
+    model:Destroy()
+    task.wait(1)
+    textButton_.Text = "RESET"
+end)
+local conn = localPlayer.CharacterAdded:Connect(function(character)
+    textButton_.Text = "UNWALK"
+    textButton_.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    textButton.Text = "DESYNC"
+    textButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    textButton.Active = true
+end)
